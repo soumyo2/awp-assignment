@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input</title>
+    <style>
+        #name{
+            background-color: cadetblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<button id="name">Name</button>
+<p>
+Your Name is <span id="outputName">____
+</p>
+<script>
+document.getElementById("name").onclick = function(){
+	var name = prompt("Enter your name");
+  document.getElementById("outputName").innerText = name;
+}
+
+</script>
+</body>
+</html>
+
